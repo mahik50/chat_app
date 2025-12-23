@@ -22,7 +22,7 @@ export default function Login() {
         navigate("/rooms")
       }
       else{
-        const errmssg = `${data.message} || Login Failed`
+        const errmssg = data.message || "Login Failed"
         toast.error(errmssg, {
           position: "top-right",
           autoClose: 5000,
