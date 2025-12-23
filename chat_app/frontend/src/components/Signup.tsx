@@ -10,7 +10,7 @@ export default function Signup(){
 
     const handleSignup = async () => {
         try{
-            const res = await fetch("http://localhost:4000/api/v1/register", {
+            const res = await fetch("https://chat-app-g5tx.onrender.com/api/v1/register", {
                 method: "POST",
                 headers: {"Content-Type" : "application/json"},
                 body: JSON.stringify({email, username, password})

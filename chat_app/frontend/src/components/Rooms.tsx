@@ -10,7 +10,7 @@ export default function Rooms() {
 
   const generateRoomID = async () => {
     try{
-        const res = await fetch("http://localhost:4000/api/v1/createRoom",{
+        const res = await fetch("https://chat-app-g5tx.onrender.com/api/v1/createRoom",{
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify( { username } )
@@ -32,7 +32,7 @@ export default function Rooms() {
 
   const joinRoom = async () => {
     try{
-        const res = await fetch("http://localhost:4000/api/v1/joinRoom",{
+        const res = await fetch("https://chat-app-g5tx.onrender.com/api/v1/joinRoom",{
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify( { username, roomID})

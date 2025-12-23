@@ -31,7 +31,7 @@ export default function ChatRoom() {
       setLatestMessage(JSON.parse(savedChat));
     }
 
-    const ws = new WebSocket("ws://localhost:4000");
+    const ws = new WebSocket("https://chat-app-g5tx.onrender.com");
 
     ws.onopen = () => {
       setSocket(ws);
